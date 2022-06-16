@@ -1,5 +1,4 @@
 #include "monty.h"
-var_t var;
 
 /**
  * main - Monty bytecode interpreter
@@ -11,6 +10,7 @@ var_t var;
 int main(int argc, char *argv[])
 {
 	stack_t *stack = NULL;
+	var_t var;
 	unsigned int line_number = 0;
 	FILE *fs = NULL;
 	char *lineptr = NULL, *op = NULL;
