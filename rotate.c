@@ -14,8 +14,6 @@ void rotl(stack_t **stack, unsigned int line_number)
 	if (*stack)
 		*stack = (*stack)->next;
 }
-#include "monty.h"
-
 /**
  * rotr - rotates the stack to the bottom.
  * @stack: double pointer to the begining of the linked list
