@@ -57,6 +57,9 @@ typedef struct instruction_s
 } instruction_t;
 
 ssize_t getline (char **string, size_t *n, FILE *stream);
+int on_exit(void (*function)(int, void *), void *arg);
+int isascii(int c);
+int dprintf(int fd, const char *format, ...);
 
 void get_op(char *op, stack_t **stack, unsigned int line_number);
 void m_push(stack_t **stack, unsigned int line_number);
